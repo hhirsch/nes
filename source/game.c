@@ -1,11 +1,7 @@
 /*
-	Hello, NES!
-	writes "Hello, NES!" to the screen
-
-	written by WolfCoder (2010)
+	Based on an example by WolfCoder (2010)
 */
 
-/* Includes */
 #include <nes.h>
 
 /* Writes the string to the screen */
@@ -56,9 +52,7 @@ int main()
 	/* By default, the screen and sprites were off */
 	*((unsigned char*)0x2001) = 8;
 
-	/* Wait */
-	/* The compiler seems to loop the main function over and over, so we need to hold it here */
 	while(1);
-	
+
 	return 0;
 }
